@@ -21,19 +21,23 @@ class TuneView extends StatelessWidget {
       body: SizedBox(
         height: double.infinity,
         child: Column(
-          children: makeTuneItem(),
+          children: tuneColors
+              .map(
+                (e) => TuneItem(color: e, onTap: () {}),
+              )
+              .toList(),
         ),
       ),
     );
   }
 
-  List<TuneItem> makeTuneItem() {
-    List<TuneItem> items = [];
-    for (var color in tuneColors) {
-      items.add(TuneItem(color: color, onTap: () {}));
-    }
-    return items;
-  }
+  // List<TuneItem> makeTuneItem() {
+  //   List<TuneItem> items = [];
+  //   for (var color in tuneColors) {
+  //     items.add(TuneItem(color: color, onTap: () {}));
+  //   }
+  //   return items;
+  // }
 
   AppBar _buildAppBar() {
     return AppBar(

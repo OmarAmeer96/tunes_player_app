@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tunes_player_app/screens/home_screen.dart';
+import 'package:tunes_player_app/views/tune_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),
         useMaterial3: true,
       ),
-      home: const HomeScreen(),
+      home: const TuneView(),
     );
   }
 }

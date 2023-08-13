@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class CustomContainer extends StatelessWidget {
-  final Color color;
-  final VoidCallback onTap;
-
-  const CustomContainer({
+class TuneItem extends StatelessWidget {
+  const TuneItem({
     super.key,
     required this.color,
     required this.onTap,
   });
+
+  final Color color;
+  final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
